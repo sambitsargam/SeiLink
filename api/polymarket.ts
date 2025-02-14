@@ -8,7 +8,7 @@ import { opensea } from "@goat-sdk/plugin-opensea";
 import { http } from "viem";
 import { createWalletClient } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
-import { seiDevnet } from "viem/chains";
+import { polygon } from "viem/chains";
 import { sei } from "viem/chains";
 import twilio from "twilio";
 import { getOnChainTools } from "@goat-sdk/adapter-vercel-ai";
@@ -27,7 +27,7 @@ const account = privateKeyToAccount(process.env.KEY as `0x${string}`);
 const walletClient = createWalletClient({
     account: account,
     transport: http(process.env.PRPC_PROVIDER_URL),
-    chain: seiDevnet,
+    chain: polygon,
 });
 
 const twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
