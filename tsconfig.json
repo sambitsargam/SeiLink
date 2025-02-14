@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "outDir": "dist",
+      "module": "CommonJS",
+      "target": "ES6",
+      "esModuleInterop": true
+    },
+    "include": ["api/index.ts"],
+    "exclude": ["node_modules", "dist"]
+  }
+  
