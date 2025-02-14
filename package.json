@@ -22,6 +22,7 @@
     "@goat-sdk/plugin-uniswap": "^0.2.10",
     "@goat-sdk/wallet-evm": "^0.2.0",
     "@goat-sdk/wallet-viem": "^0.2.0",
+    "@openpond/sdk": "^0.3.15",
     "@types/twilio": "^3.19.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
